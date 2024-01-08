@@ -1,19 +1,42 @@
+/* Common style added */
 * {
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    color: aliceblue;
+body {
+    font-family: 'Merriweather', serif;
 }
 
+
+
 .banner {
-    background-image: url('../images/Banner\ Image.png');
-    width: 1320px;
-    height: 800px;
-    /* flex-shrink: 0; */
+    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../images/Banner\ Image.png');
+    max-width: 1320px;
+    height: 600px;
+    border-radius: 16px;
     background-repeat: no-repeat;
     align-items: center;
-    margin: 50px 140px 100px 140px;
+    margin: 50px auto
+}
 
+.banner-greeting {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.banner-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 95px;
+    /* 131.944% */
+}
+
+.banner-content {
+    padding: 177px 344px;
 }
