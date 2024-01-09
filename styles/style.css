@@ -211,6 +211,7 @@ body {
     line-height: normal;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
 }
 
 .button-container {
@@ -402,6 +403,14 @@ body {
     height: 450px;
     border-radius: 16px;
     padding: 6px 8px;
+    cursor: pointer;
+}
+
+.product-image img:hover {
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 1);
+    transition: .5s;
+    transform: scale(1.1);
+    z-index: 1;
 }
 
 /* Newsletter style added */
@@ -409,6 +418,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
 
 }
 
@@ -475,15 +486,103 @@ body {
     background: #FFF;
 }
 
+.email-input input[placeholder] {
+    color: rgba(7, 2, 17, 0.30);
+    padding-left: 50px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+}
+
 .email-input button {
     width: 210px;
     height: 72px;
     border-radius: 0px 50px 50px 0px;
     background: #F00;
     border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+
 }
 
 /* Footer style */
 footer {
     background: #070211;
+}
+
+.address-link {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 120px;
+}
+
+
+.footer-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.address h4 {
+    max-width: 375px;
+}
+
+.call {
+    display: flex;
+}
+
+.web {
+    display: flex;
+}
+
+.call h4 {
+    display: inline-block;
+}
+
+.call img {
+    padding-right: 5px;
+}
+
+.web h4 {
+    display: inline-block;
+}
+
+.web img {
+    padding-right: 5px;
+}
+
+.hr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hr-container hr {
+    width: 1320px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container img {
+    padding-left: 24px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-around;
 }
